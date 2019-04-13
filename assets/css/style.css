@@ -79,10 +79,16 @@ h2 {
     padding: 25px;
 }
 
-.portrait {
-    width: 325px;
-    height: auto;
+p {
+    line-height: 200%;
+}
+
+#portrait {
     align: auto;
+    float: left;
+    height: auto;
+    padding: 0 25px 25px 0;
+    width: 200px;
 }
 
 footer {
