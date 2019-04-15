@@ -13,6 +13,10 @@ body {
     clear: both;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header styling */
 header {
     background-color: #ffffff;
@@ -37,6 +41,7 @@ h1 {
 
 nav {
     float: right;
+    padding-top: 25px;
 }
 
 ul {
@@ -53,15 +58,19 @@ li a {
     padding: 0 10px;
     float: left;
 }
+li:not(:last-child) {
+    border-right: 2px solid #dddddd;
+}
 
 
 section,
 form {
-    max-width: 940px;
+    box-sizing: border-box;
+    width: 960px;
+    padding: 20px;
     margin: 25px auto;
     background-color: #ffffff;
     border: 2px solid #dddddd;
-    padding: 20px;
 }
 
 h1,
@@ -110,8 +119,10 @@ footer {
 
 /* styling for portfolio page */
 
-figure {
-    display: inline-block;
+.portfolio {
+    display: inline-block; 
+    margin: 0;
+    width: 300px;
 }
 
 figcaption {
@@ -121,18 +132,14 @@ figcaption {
     padding: 2px 0;
     position: relative;
     margin-top: -75px;
+    width: 300px;
 }
 
 /* styling for contact page */
 
-form {
-    width: 100%;
-    padding: 20px;
-}
-
 input[type="text"],
 input[type="email"] {
-    width: 99%;
+    width: 98%;
     font-size: 14px;
     color: #777777;
     padding: 5px;
@@ -144,6 +151,7 @@ label {
 }
 
 textarea {
+    box-sizing: border-box;
     width: 99%;
     height: 200px;
 }
