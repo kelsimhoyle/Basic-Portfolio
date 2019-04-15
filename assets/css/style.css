@@ -13,8 +13,23 @@ body {
     clear: both;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Hyperlink text styling */
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: #89B9B6;
+}
+
+a:visited {
+    color: ##B7F7F4;
 }
 
 /* Header styling */
@@ -62,9 +77,9 @@ li:not(:last-child) {
     border-right: 2px solid #dddddd;
 }
 
+/* Main content styling */
 
-section,
-form {
+.mainContent {
     box-sizing: border-box;
     width: 960px;
     padding: 20px;
@@ -87,20 +102,22 @@ h2 {
     margin: 0;
 }
 
-
 .content {
     padding: 25px;
 }
 
 p {
     line-height: 200%;
+    margin: 0;
 }
+
+
 
 #portrait {
     align: auto;
     float: left;
     height: auto;
-    padding: 0 25px 25px 0;
+    padding-right: 25px;
     width: 200px;
 }
 
@@ -109,20 +126,23 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    display: inline-block;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
     background-color: #666666;
     color: #fff;
     text-align: center;
     padding-top: 10px;
     border-top: 10px solid #4aaaa5;
+
 }
 
 /* styling for portfolio page */
 
 .portfolio {
-    display: inline-flex;
     justify-content: space-around;
-    margin-left: 20px;
+    display: inline-block;
+    margin: 20px 20px 0 0;
     width: 300px;
 }
 
@@ -155,12 +175,14 @@ textarea {
     box-sizing: border-box;
     width: 99%;
     height: 200px;
+    font-size: 14px;
+    color: #777777;
 }
 
 button {
     display: block;
     background-color: #4aaaa5;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 20px;
 }
