@@ -120,8 +120,9 @@ footer {
 /* styling for portfolio page */
 
 .portfolio {
-    display: inline-block; 
-    margin: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: 20px;
     width: 300px;
 }
 
