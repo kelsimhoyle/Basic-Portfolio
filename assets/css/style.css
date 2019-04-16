@@ -14,8 +14,9 @@ body {
 }
 
 .container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /* Hyperlink text styling */
@@ -103,7 +104,7 @@ h2 {
 }
 
 .content {
-    padding: 25px;
+    padding: 25px 0;
 }
 
 p {
@@ -139,18 +140,18 @@ footer {
 
 /* styling for portfolio page */
 
-.portfolio {
-    justify-content: space-around;
-    display: inline-block;
-    margin: 20px 20px 0 0;
-    width: 300px;
+.project {
+    float: left;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
 }
 
-figcaption {
+.projectTitle {
     background-color: #4aaaa5;
     color: #fff;
     text-align: center;
-    padding: 2px 0;
+    padding: 20px 0;
     position: relative;
     margin-top: -75px;
     width: 300px;
