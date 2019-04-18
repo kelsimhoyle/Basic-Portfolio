@@ -155,20 +155,18 @@ footer p {
 /* styling for portfolio page */
 
 .project {
-    margin-top: 25px;
-    margin-right: 25px;
+    display: inline-block;
+    margin: 25px 25px 40px 0;
 }
 
 .projectTitle {
+    position: relative;
+    margin-top: -75px;
     background-color: #4aaaa5;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: relative;
-    margin-top: -75px;
-    width: 300px;
 }
-
 /* styling for contact page */
 
 input[type="text"],
