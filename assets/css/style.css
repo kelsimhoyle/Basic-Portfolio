@@ -13,12 +13,6 @@ body {
     clear: both;
 }
 
-.container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 /* text styling */
 
 
